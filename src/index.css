@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Lastica";
+  src: url("/fonts/lastica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+
+  
+
+  --font-primary: "Urbanist", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+
+
+  --color-background: #fdfaf0;
+  --second-background: #F9F6E7;
+
+  --color-primary: #006251;
+  --color-primary-hover: #004f42;
+  --color-primary-light: #d4efe7;
+
+  --color-text-primary: #006251;
+  --color-text-dark: #000000;
+  --color-text-light: #ffffff;
+
+  --color-card: #ffffff;
+
+  --color-border: #c7e3dc;
+  --color-muted: #6b7f79;
+  --color-primary-soft: #e8f5f1;
+
+  --font-logo: "Lastica", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-background);
+  color: var(--color-text-dark);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
