@@ -52,7 +52,7 @@ const Hero = () => {
                 <div className="flex justify-center lg:justify-end">
                     <div className="w-full max-w-xl">
                         <img
-                            src="/hero-image.jpg"
+                            src={`${import.meta.env.BASE_URL}hero-image.jpg`}
                             alt="VIDE study platform"
                             className="h-auto w-full object-contain"
                         />
