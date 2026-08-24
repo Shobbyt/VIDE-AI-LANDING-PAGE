@@ -44,12 +44,13 @@ const HeroFeatures = () => {
                         <div
                             key={feature.title}
                             className="
-                                mx-3 flex w-auto items-center gap-5
-                                rounded-2xl bg-white p-6
-                                sm:mx-0
-                                lg:mx-0 lg:block
-                            " >
-                         
+    mx-3 flex w-auto items-center gap-5
+    rounded-2xl bg-white p-6 shadow-sm
+    transition-shadow duration-300 hover:shadow-lg
+    sm:mx-0
+    lg:mx-0 lg:block border border-black/10
+">
+
                             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary-light)] lg:mb-5">
                                 <Icon
                                     size={24}

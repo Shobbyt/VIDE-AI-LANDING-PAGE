@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Urbanist:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Poppins:wght@400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
 @font-face {
   font-family: "Lastica";
-  src: url("/VIDE-AI-LANDING-PAGE/fonts/lastica.ttf") format("truetype");
+  src: url("./public/fonts/lastica.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -13,7 +13,7 @@
 
   
 
-  --font-primary: "Urbanist", sans-serif;
+--font-primary: "Fraunces", serif;
   --font-secondary: "Poppins", sans-serif;
 
 

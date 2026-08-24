@@ -64,7 +64,7 @@ const AboutVide = () => {
                         return (
                             <div
                                 key={reason.title}
-                                className=" rounded-2xl bg-white p-6 sm:p-7 lg:col-span-2">
+                              className="rounded-2xl bg-white p-6 shadow-lg sm:p-7 lg:col-span-2 border border-black/10">
                                
                                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-primary-light)]">
                                     <Icon
