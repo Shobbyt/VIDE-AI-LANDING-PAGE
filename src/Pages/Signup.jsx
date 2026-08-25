@@ -18,30 +18,25 @@ const Signup = () => {
         className="lg:hidden" >
         <Link
           to="/"
-          className="mx-auto mb-6 flex w-fit items-center gap-3">
+          className="mx-auto -mt-4 mb-[4px] flex w-fit items-center">
           <img
             src={videLogo}
             alt="VIDE"
-            className="h-10 w-10 object-contain"
+            className="h-24 w-24 object-contain"
           />
 
-          <span
-            style={{ fontFamily: "Lastica" }}
-            className="text-3xl font-bold tracking-wide text-[var(--color-primary)]" >
-            VIDE
-          </span>
         </Link>
       </motion.div>
 
 
       <div className="mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
 
-    
+
         <Sign />
 
 
-       
-        <div className="flex w-full justify-center lg:w-1/2">
+
+        <div className="relative -mt-4 flex w-full justify-center lg:w-1/2">
 
           <motion.section
             initial={{
@@ -63,7 +58,7 @@ const Signup = () => {
 
             <div className="w-full">
 
-           
+
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -83,7 +78,7 @@ const Signup = () => {
               </motion.div>
 
 
-           
+
               <motion.button
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -107,7 +102,7 @@ const Signup = () => {
               </motion.button>
 
 
-              
+
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -126,7 +121,7 @@ const Signup = () => {
               </motion.div>
 
 
-          
+
               <motion.form
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -137,7 +132,7 @@ const Signup = () => {
                 }}
                 className="space-y-3.5" >
 
-        
+
                 <div>
                   <label
                     htmlFor="name"
@@ -154,7 +149,7 @@ const Signup = () => {
                 </div>
 
 
-             
+
                 <div>
                   <label
                     htmlFor="email"
@@ -187,7 +182,7 @@ const Signup = () => {
                 </div>
 
 
-            
+
                 <div>
                   <label
                     htmlFor="confirmPassword"
@@ -204,7 +199,7 @@ const Signup = () => {
                 </div>
 
 
-      
+
                 <motion.button
                   type="submit"
                   whileHover={{
@@ -220,7 +215,7 @@ const Signup = () => {
               </motion.form>
 
 
-        
+
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,7 +235,7 @@ const Signup = () => {
               </motion.p>
 
 
- 
+
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

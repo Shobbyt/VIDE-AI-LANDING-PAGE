@@ -23,27 +23,23 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
 
-        {/* Logo */}
+
+
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative flex h-10 w-10 items-center"
         >
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center">
             <img
               src={videLogo}
               alt="VIDE"
-              className="h-9 w-9 object-contain"
+              className="h-10 w-10 scale-[2] object-contain"
             />
-
-            <span
-              style={{ fontFamily: "Lastica" }}
-              className="translate-y-0.5 text-2xl text-[var(--color-primary)]"
-            >
-              VIDE
-            </span>
           </Link>
         </motion.div>
+
 
         {/* Desktop Navigation */}
         <motion.div

@@ -19,18 +19,14 @@ const Signin = () => {
         className="lg:hidden">
         <Link
           to="/"
-          className="mx-auto mb-6 flex w-fit items-center gap-3">
+          className="mx-auto mb-[4px] flex w-fit items-center">
           <img
             src={videLogo}
             alt="VIDE"
-            className="h-10 w-10 object-contain"
+            className="h-24 w-24 object-contain"
           />
 
-          <span
-            style={{ fontFamily: "Lastica" }}
-            className="text-3xl font-bold tracking-wide text-[var(--color-primary)]" >
-            VIDE
-          </span>
+         
         </Link>
       </motion.div>
 
@@ -41,7 +37,7 @@ const Signin = () => {
 
 
 
-        <div className="flex w-full justify-center lg:w-1/2">
+        <div className="relative -mt-12 flex w-full justify-center lg:w-1/2">
 
           <motion.section
             initial={{
