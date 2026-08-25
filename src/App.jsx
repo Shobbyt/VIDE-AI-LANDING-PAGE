@@ -1,10 +1,10 @@
-
-import LandingPage from "./Pages/LandingPage";
+import { AppRoutes } from "./routes/AppRoutes"
 
 const App = () => {
   return (
     <div>
-      <LandingPage/>
+      <AppRoutes />
+
     </div>
   )
 }
