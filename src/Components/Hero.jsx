@@ -1,6 +1,8 @@
 import HeroFeatures from "./HeroFeatures";
 import { LuSchool } from "react-icons/lu";
 
+import heroImage from "../public/hero-image.jpg";
+
 const Hero = () => {
     return (
         <section id="home" className="bg-[var(--color-background)] px-6 py-16 sm:py-20 lg:px-8 lg:py-24">
@@ -52,7 +54,7 @@ const Hero = () => {
                 <div className="flex justify-center lg:justify-end">
                     <div className="w-full max-w-xl">
                         <img
-                            src={`${import.meta.env.BASE_URL}hero-image.jpg`}
+                            src={heroImage}
                             alt="VIDE study platform"
                             className="h-auto w-full object-contain"
                         />

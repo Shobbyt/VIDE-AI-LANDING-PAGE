@@ -1,5 +1,5 @@
 
-import LandingPage from '../Pages/LandingPage'
+import LandingPage from "./Pages/LandingPage";
 
 const App = () => {
   return (
