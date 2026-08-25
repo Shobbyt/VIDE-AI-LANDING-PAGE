@@ -11,6 +11,21 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const scrollToSection = (id) => {
+    setIsOpen(false);
+
+    setTimeout(() => {
+      const section = document.getElementById(id);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 350);
+  };
+
   return (
     <motion.nav
       initial={{ y: -80, opacity: 0 }}
@@ -23,8 +38,7 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
 
-
-
+        {/* Logo */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -40,7 +54,6 @@ const Navbar = () => {
           </Link>
         </motion.div>
 
-
         {/* Desktop Navigation */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -55,19 +68,21 @@ const Navbar = () => {
             Home
           </Link>
 
-          <a
-            href="/#features"
+          <button
+            type="button"
+            onClick={() => scrollToSection("features")}
             className="text-black transition-colors hover:text-[#006251]"
           >
             Features
-          </a>
+          </button>
 
-          <a
-            href="/#study-mode"
+          <button
+            type="button"
+            onClick={() => scrollToSection("study-mode")}
             className="text-black transition-colors hover:text-[#006251]"
           >
             Study Mode
-          </a>
+          </button>
         </motion.div>
 
         {/* Desktop Actions */}
@@ -100,10 +115,10 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="text-black md:hidden"
           aria-label="Toggle menu"
+          type="button"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </motion.button>
-
       </div>
 
       {/* Mobile Menu */}
@@ -122,7 +137,6 @@ const Navbar = () => {
               transition={{ duration: 0.3 }}
               className="flex flex-col gap-5 px-6 py-5"
             >
-
               <Link
                 to="/"
                 onClick={closeMenu}
@@ -131,21 +145,21 @@ const Navbar = () => {
                 Home
               </Link>
 
-              <a
-                href="/#features"
-                onClick={closeMenu}
-                className="text-black hover:text-[#006251]"
+              <button
+                type="button"
+                onClick={() => scrollToSection("features")}
+                className="text-left text-black hover:text-[#006251]"
               >
                 Features
-              </a>
+              </button>
 
-              <a
-                href="/#study-mode"
-                onClick={closeMenu}
-                className="text-black hover:text-[#006251]"
+              <button
+                type="button"
+                onClick={() => scrollToSection("study-mode")}
+                className="text-left text-black hover:text-[#006251]"
               >
                 Study Mode
-              </a>
+              </button>
 
               <Link
                 to="/signin"
@@ -162,12 +176,10 @@ const Navbar = () => {
               >
                 Get Started
               </Link>
-
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
-
     </motion.nav>
   );
 };
