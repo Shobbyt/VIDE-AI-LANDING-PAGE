@@ -1,12 +1,14 @@
-import { AppRoutes } from "./routes/AppRoutes"
+import { AppRoutes } from "./routes/AppRoutes";
+import AnimatedBackground from "./Components/AnimatedBackground";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <AnimatedBackground />
+
       <AppRoutes />
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;

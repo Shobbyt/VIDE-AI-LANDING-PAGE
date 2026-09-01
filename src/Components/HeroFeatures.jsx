@@ -1,5 +1,10 @@
-
-import { LuGraduationCap, LuMessageCircleQuestion, LuClipboardCheck, LuClipboardPenLine, LuLightbulb, } from "react-icons/lu";
+import {
+    LuGraduationCap,
+    LuMessageCircleQuestion,
+    LuClipboardCheck,
+    LuClipboardPenLine,
+    LuLightbulb,
+} from "react-icons/lu";
 
 const features = [
     {
@@ -35,21 +40,28 @@ const features = [
 
 const HeroFeatures = () => {
     return (
-        <div className="mt-10 md:mt-15 mx-auto max-w-7xl pb-12 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
-                {features.map((feature) => {
+        <div className="mx-auto mt-10 max-w-7xl pb-12 sm:px-6 lg:px-8">
+
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-6">
+
+                {features.map((feature, index) => {
                     const Icon = feature.icon;
 
                     return (
                         <div
                             key={feature.title}
-                            className="
-    mx-3 flex w-auto items-center gap-5
-    rounded-2xl bg-white p-6 shadow-sm
-    transition-shadow duration-300 hover:shadow-lg
-    sm:mx-0
-    lg:mx-0 lg:block border border-black/10
-">
+                            className={`
+                                mx-3 flex items-center gap-5
+                                rounded-2xl border border-black/10
+                                bg-white p-6 shadow-sm
+                                transition-shadow duration-300
+                                hover:shadow-lg
+                                sm:mx-0
+                                lg:block lg:col-span-2
+
+                                ${index === 3 ? "lg:col-start-2" : ""}
+                            `}
+                        >
 
                             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary-light)] lg:mb-5">
                                 <Icon
@@ -68,10 +80,13 @@ const HeroFeatures = () => {
                                     {feature.description}
                                 </p>
                             </div>
+
                         </div>
                     );
                 })}
+
             </div>
+
         </div>
     );
 };

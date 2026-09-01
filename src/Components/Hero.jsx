@@ -1,5 +1,6 @@
+
 import HeroFeatures from "./HeroFeatures";
-import { LuSchool } from "react-icons/lu";
+import { LuGraduationCap } from "react-icons/lu";
 import { motion } from "motion/react";
 import heroImage from "../public/hero-image.jpg";
 
@@ -11,7 +12,6 @@ const Hero = () => {
         >
             <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
-            
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -22,7 +22,6 @@ const Hero = () => {
                     className="max-w-2xl"
                 >
 
-        
                     <motion.div
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -32,7 +31,7 @@ const Hero = () => {
                         }}
                         className="mb-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm"
                     >
-                        <LuSchool
+                        <LuGraduationCap
                             size={18}
                             strokeWidth={2}
                             className="text-[var(--color-primary)]"
@@ -43,8 +42,6 @@ const Hero = () => {
                         </span>
                     </motion.div>
 
-
-           
                     <motion.h1
                         initial={{ opacity: 0, y: 25 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -59,8 +56,6 @@ const Hero = () => {
                         teaches you, then tests you
                     </motion.h1>
 
-
-              
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -75,8 +70,6 @@ const Hero = () => {
                         streaks.
                     </motion.p>
 
-
-                 
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -86,7 +79,6 @@ const Hero = () => {
                         }}
                         className="mt-8 flex flex-col gap-4 sm:flex-row"
                     >
-
                         <button className="rounded-lg bg-[var(--color-primary)] px-6 py-3.5 font-semibold text-white transition-all hover:bg-[var(--color-primary-hover)] hover:shadow-md">
                             Start Studying for Free
                         </button>
@@ -94,13 +86,10 @@ const Hero = () => {
                         <button className="rounded-lg border border-[var(--color-primary)] bg-white px-6 py-3.5 font-semibold text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary-light)]">
                             See What's Inside
                         </button>
-
                     </motion.div>
 
                 </motion.div>
 
-
-  
                 <motion.div
                     initial={{ opacity: 0, x: 50, scale: 0.95 }}
                     animate={{ opacity: 1, x: 0, scale: 1 }}
@@ -122,8 +111,6 @@ const Hero = () => {
 
             </div>
 
-
-  
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
