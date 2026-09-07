@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { AppRoutes } from "./routes/AppRoutes";
-import AnimatedBackground from "./Components/AnimatedBackground";
+// import AnimatedBackground from "./Components/AnimatedBackground";
 import LoadingScreen from "./Components/LoadingScreen";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
     <>
       {loading && <LoadingScreen />}
 
-      <AnimatedBackground />
+      {/* <AnimatedBackground /> */}
 
       <AppRoutes />
     </>

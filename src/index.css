@@ -3,6 +3,14 @@
 @import "tailwindcss";
 
 
+@font-face {
+  font-family: "Lastica";
+  src: url("./public/fonts/Lastica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
 
   
