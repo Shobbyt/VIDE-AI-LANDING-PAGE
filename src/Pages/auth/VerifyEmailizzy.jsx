@@ -1,25 +1,21 @@
 import { useEffect, useState } from "react";
 
-function VerifyEmail() {
+function VerifyEmailizzy() {
   const [status, setStatus] = useState(() => (
-    new URLSearchParams(window.location.search).has("oobCode")
+    new URLSearchParams(window.location.search).has("uid")
       ? "checking"
       : "error"
   ));
 
   useEffect(() => {
-    const oobCode = new URLSearchParams(window.location.search).get("oobCode");
+    const uid = new URLSearchParams(window.location.search).get("uid");
 
-    if (!oobCode) {
+    if (!uid) {
       return;
     }
 
     const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:8000";
-    fetch(`${apiUrl}/auth/verification-status`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ oobCode }),
-    })
+    fetch(`${apiUrl}/auth/verification-status/${encodeURIComponent(uid)}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Verification status request failed.");
@@ -52,4 +48,4 @@ function VerifyEmail() {
   );
 }
 
-export default VerifyEmail;
+export default VerifyEmailizzy;
