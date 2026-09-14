@@ -421,9 +421,9 @@ const PrivacyPolicy = () => {
                   <p className="mt-5">
                     To exercise any of these rights, contact us at{" "}
                     <span className="font-medium text-[var(--color-primary)]">
-                      [your contact email]
+                      vide@midev.ng
                     </span>
-                    . We will respond within 30 days.
+                    . We will respond within 24 hours.
                   </p>
                 </div>
               </section>

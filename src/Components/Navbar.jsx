@@ -91,6 +91,13 @@ const Navbar = () => {
             className="text-black transition-colors hover:text-[#006251]">
             Study Mode
           </button>
+
+           <button
+            type="button"
+            onClick={() => scrollToSection("about")}
+            className="text-black transition-colors hover:text-[#006251]">
+            About Us
+          </button>
         </motion.div>
 
 

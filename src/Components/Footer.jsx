@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import viLogo from "../public/VI-LOGO.png";
+import viLogo from "../public/vide-logo.png";
 
 const Footer = () => {
     return (
@@ -16,12 +16,10 @@ const Footer = () => {
                             <img
                                 src={viLogo}
                                 alt="VI logo"
-                                className="h-10 w-10 object-contain"
+                                className="h-32 w-32 object-contain"
                             />
 
-                            <h2 className="font-[var(--font-logo)] text-3xl text-[var(--color-primary)]">
-                                VIDE
-                            </h2>
+
                         </div>
 
                         <p className="mt-5 max-w-xs font-[var(--font-secondary)] text-sm leading-6 text-[var(--color-muted)]">
@@ -43,8 +41,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="#features"
-                                        className="transition hover:text-[var(--color-primary)]"
-                                    >
+                                        className="transition hover:text-[var(--color-primary)]">
                                         Features
                                     </a>
                                 </li>
@@ -52,8 +49,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="#"
-                                        className="transition hover:text-[var(--color-primary)]"
-                                    >
+                                        className="transition hover:text-[var(--color-primary)]" >
                                         Study Modes
                                     </a>
                                 </li>
@@ -61,8 +57,7 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="#about"
-                                        className="transition hover:text-[var(--color-primary)]"
-                                    >
+                                        className="transition hover:text-[var(--color-primary)]">
                                         About Us
                                     </a>
                                 </li>
@@ -94,7 +89,7 @@ const Footer = () => {
                             </ul>
                         </div>
 
-        
+
                         <div>
                             <h3 className="font-[var(--font-secondary)] text-sm font-semibold text-[var(--color-text-dark)]">
                                 Legal
@@ -122,7 +117,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-        
+
                 <div className="border-t border-black/10 py-6">
                     <p className="text-center font-[var(--font-secondary)] text-sm text-[var(--color-muted)]">
                         © {new Date().getFullYear()} Vide — Midev

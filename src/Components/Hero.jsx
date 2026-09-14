@@ -3,6 +3,7 @@ import HeroFeatures from "./HeroFeatures";
 import { LuGraduationCap } from "react-icons/lu";
 import { motion } from "motion/react";
 import heroImage from "../public/hero-image.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -47,9 +48,7 @@ const Hero = () => {
                             delay: 0.3,
                         }}
                         className="text-3xl font-bold leading-tight tracking-tight text-[var(--color-primary)] sm:text-4xl lg:text-5xl">
-                        The study partner that
-                        <br className="hidden sm:block" />
-                        teaches you, then tests you
+                        The study partner that teaches you, then tests you
                     </motion.h1>
 
                     <motion.p
@@ -73,11 +72,21 @@ const Hero = () => {
                             delay: 0.5,
                         }}
                         className="mt-8 flex flex-col gap-4 sm:flex-row">
-                        <button className="rounded-lg bg-[var(--color-primary)] px-6 py-3.5 font-semibold text-white transition-all hover:bg-[var(--color-primary-hover)] hover:shadow-md">
+                        <Link
+                            to="/signup"
+                            className="inline-block rounded-lg bg-[var(--color-primary)] px-6 py-3.5 font-semibold text-white transition-all hover:bg-[var(--color-primary-hover)] hover:shadow-md"
+                        >
                             Start Studying for Free
-                        </button>
+                        </Link>
 
-                        <button className="rounded-lg border border-[var(--color-primary)] bg-white px-6 py-3.5 font-semibold text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary-light)]">
+                        <button
+                            onClick={() => {
+                                document.getElementById("features")?.scrollIntoView({
+                                    behavior: "smooth",
+                                    block: "start",
+                                });
+                            }}
+                            className="rounded-lg border border-[var(--color-primary)] bg-white px-6 py-3.5 font-semibold text-[var(--color-primary)] transition-all hover:bg-[var(--color-primary-light)]">
                             See What's Inside
                         </button>
                     </motion.div>
