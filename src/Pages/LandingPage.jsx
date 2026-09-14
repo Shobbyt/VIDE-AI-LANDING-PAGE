@@ -1,15 +1,18 @@
-import AboutVide from "../Components/AboutVide";
+
 import Cta from "../Components/Cta";
+import Features from "../Components/Features";
 import Footer from "../Components/Footer";
 import Hero from "../Components/Hero";
 import Navbar from "../Components/Navbar";
+import VideAbout from "../Components/VideAbout";
 
 const LandingPage = () => {
   return (
     <div>
       <Navbar />
       <Hero />
-      <AboutVide />
+      <Features />
+      <VideAbout/>
       <Cta />
       <Footer />
     </div>

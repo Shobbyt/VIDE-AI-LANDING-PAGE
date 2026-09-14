@@ -60,8 +60,7 @@ const HeroFeatures = () => {
                                 lg:block lg:col-span-2
 
                                 ${index === 3 ? "lg:col-start-2" : ""}
-                            `}
-                        >
+                            `}>
 
                             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary-light)] lg:mb-5">
                                 <Icon

@@ -13,10 +13,9 @@ const LoadingScreen = () => {
         delay: 6,
         duration: 1,
         ease: [0.76, 0, 0.24, 1],
-      }}
-    >
+      }}>
 
-      {/* GREEN CIRCLE */}
+
       <motion.div
         className="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#006251]"
         initial={{ scale: 0 }}
@@ -24,13 +23,10 @@ const LoadingScreen = () => {
         transition={{
           duration: 2.5,
           ease: "easeInOut",
-        }}
-      />
+        }} />
 
-      {/* VI LOGO
-          COMES FROM ABOVE
-          STOPS ABOVE VIDE
-      */}
+
+
       <motion.img
         src={viLogo}
         alt="VI Logo"
@@ -56,15 +52,14 @@ const LoadingScreen = () => {
         }}
       />
 
-      {/* VIDE
-          EACH LETTER COMES FROM THE RIGHT
-      */}
+
       <div
         className="absolute z-20 flex items-center gap-2"
         style={{
           marginTop: "90px",
-        }}
-      >
+        }}>
+
+
         {letters.map((letter, index) => (
           <motion.span
             key={letter}
@@ -87,8 +82,9 @@ const LoadingScreen = () => {
               delay: 1.8 + index * 0.4,
               duration: 0.5,
               ease: "easeOut",
-            }}
-          >
+            }} >
+
+
             {letter}
           </motion.span>
         ))}

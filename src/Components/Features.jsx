@@ -44,7 +44,7 @@ const reasons = [
     },
 ];
 
-const AboutVide = () => {
+const Features = () => {
     return (
         <section
             id="features"
@@ -58,8 +58,7 @@ const AboutVide = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
-                    className="mx-auto max-w-6xl text-center"
-                >
+                    className="mx-auto max-w-6xl text-center">
                     <h2 className="text-3xl font-semibold leading-tight text-[var(--color-primary)] sm:text-4xl lg:whitespace-nowrap lg:text-4xl">
                         Five things VIDE does that a plain chatbot doesn't
                     </h2>
@@ -85,8 +84,7 @@ const AboutVide = () => {
                                 whileHover={{
                                     y: -6,
                                 }}
-                                className="rounded-2xl border border-black/10 bg-white p-6 shadow-lg sm:p-7 lg:col-span-2"
-                            >
+                                className="rounded-2xl border border-black/10 bg-white p-6 shadow-lg sm:p-7 lg:col-span-2" >
 
 
                                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--color-primary-light)]">
@@ -117,4 +115,4 @@ const AboutVide = () => {
     );
 };
 
-export default AboutVide;
+export default Features;
